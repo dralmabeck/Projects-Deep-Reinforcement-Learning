@@ -2,7 +2,7 @@
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
 
-# Project 1: Navigation
+# Project: Navigation
 
 ### Introduction
 
@@ -32,24 +32,54 @@ The task is episodic, and in order to solve the environment, your agent must get
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
-2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+2. Place the file in the "project-navigation-agent" subdirectory of this GitHub repository checkout and unzip (or decompress) the file. 
 
-### Instructions
+### Installation instructions
 
-Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
+This project requires Python in version >= 3.5. Furthermore the following Python packages are required.
 
-### (Optional) Challenge: Learning from Pixels
+- Jupyter
+- Notebook
+- time
+- pickle
+- math
+- datetime
+- random
+- numpy
+- collections
+- matplotlib
+- torch
+- unityagents
 
-After you have successfully completed the project, if you're looking for an additional challenge, you have come to the right place!  In the project, your agent learned from information such as its velocity, along with ray-based perception of objects around its forward direction.  A more challenging task would be to learn directly from pixels!
+I recommend using the Anaconda Python distribution (https://www.anaconda.com/products/individual) for a thourough installation of a usable Python environment. Then from the console a missing package can easily be installed with **`conda install <package_name>`**.
 
-To solve this harder task, you'll need to download a new Unity environment.  This environment is almost identical to the project environment, where the only difference is that the state is an 84 x 84 RGB image, corresponding to the agent's first-person view.  (**Note**: Udacity students should not submit a project with this new environment.)
+Furthermore, with the pip package manager missing packages can be installed via the console with **`pip install <package_name>`**.
 
-You need only select the environment that matches your operating system:
-- Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Linux.zip)
-- Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana.app.zip)
-- Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Windows_x86.zip)
-- Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Windows_x86_64.zip)
+This repository can be downloaded with Git using **`git checkout https://github.com/dralmabeck/Udacity-Deep-Reinforcement-Learning`**.
 
-Then, place the file in the `p1_navigation/` folder in the DRLND GitHub repository, and unzip (or decompress) the file.  Next, open `Navigation_Pixels.ipynb` and follow the instructions to learn how to use the Python API to control the agent.
+### How to use
 
-(_For AWS_) If you'd like to train the agent on AWS, you must follow the instructions to [set up X Server](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above.
+1. From the main directory of this repository in the console go into the "project-navigation-agent" subdirectory. There execute **`jupyter notebook`**.
+
+2. Next, open the **`Navigation.ipynb`** notebook.
+
+3. Follow the instructions and descriptions in `Navigation.ipynb` to get started with training your own agent. It lists all the algorithms and there sources on scientific papers.
+
+4. Read the **`Report.md`** for insights on my solution on this problem should you get stuck.
+
+### Files included
+
+1. **`README.md`** - This file
+2. **`Report.md`** - Project report based on Navigation.ipynb and including all executed cells and output
+3. **`output_47_0.png`** - Picture file for Report.md
+4. **`output_47_1.png`** - Picture file for Report.md
+5. **`Navigation.ipynb`** - Main program. Contains entire implementation of agent and data processing
+6. **`unity_environment.log`** - Log File of Unity Environment
+7. **`scores_single.pckl`** - Training scores of SingleAgent
+8. **`scores_double.pckl`** - Training scores of DoubleAgent
+9. **`scores_triple.pckl`** - Training scores of TripleAgent
+10. **`scores_quadruple.pckl`** - Training scores of QuadrupleAgent
+11. **`single_network_final.pth`** - Final network parameters for SingleAgent
+12. **`double_network_final.pth`** - Final network parameters for DoubleAgent
+13. **`triple_network_final.pth`** - Final network parameters for TripleAgent
+14. **`quadruple_network_final.pth`** - Final network parameters for QuadrupleAgent
