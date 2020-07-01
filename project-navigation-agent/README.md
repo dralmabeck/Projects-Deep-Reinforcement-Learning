@@ -6,7 +6,9 @@
 
 ### Introduction
 
-For this project, you will train an agent to navigate (and collect bananas!) in a large, square world.  
+For this project, I will train an agent to navigate (and collect bananas!) in a large, square world.  
+
+This projects is part of my project work on the Deep Reinforcement Learning Nanodegree by Udacity. See https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893 and https://github.com/udacity/deep-reinforcement-learning
 
 ![Trained Agent][image1]
 
@@ -83,3 +85,4 @@ This repository can be downloaded with Git using **`git checkout https://github.
 12. **`double_network_final.pth`** - Final network parameters for DoubleAgent
 13. **`triple_network_final.pth`** - Final network parameters for TripleAgent
 14. **`quadruple_network_final.pth`** - Final network parameters for QuadrupleAgent
+15. **`Pixels.ipynb`** - Template for future project to train agent directly on RGB screen data and not on state vector
