@@ -12,3 +12,5 @@
 
  3. Collaboration and Competition of Two Agents in the Unity Tennis Environment
 
+ 4. Lunar Landing (Bonus): Double Duelling Q-Learning Algorithm with Prioritized Replay Memory
+
