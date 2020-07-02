@@ -1,6 +1,6 @@
 [//]: # (Image References)
 
-[image1]: lunar_landing.gif "Trained Agent"
+[image1]: https://github.com/dralmabeck/Udacity-Deep-Reinforcement-Learning/blob/master/project-lunar-landing/lunar_landing.giff "Trained Agent"
 
 # Project: Lunar Landing
 
