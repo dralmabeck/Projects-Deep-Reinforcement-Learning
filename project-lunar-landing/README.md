@@ -1,7 +1,3 @@
-[//]: # (Image References)
-
-[image1]: https://github.com/dralmabeck/Udacity-Deep-Reinforcement-Learning/blob/master/project-lunar-landing/lunar_landing.giff "Trained Agent"
-
 # Project: Lunar Landing
 
 ### Introduction
@@ -10,6 +6,8 @@ For this project, I will train an agent to land a space ship on the Moon.
 This environment is par of the OpenAI Gym, more details can be read here: https://gym.openai.com/envs/LunarLander-v2/
 
 The work is based on a project by the Udacity Deep Reinforcement Learning Nanodegree: https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893
+
+![](https://github.com/dralmabeck/Udacity-Deep-Reinforcement-Learning/blob/master/project-lunar-landing/lunar_landing.gif)
 
 A landing pad is at coordinates (0,0). Reward for moving from the top of the screen to landing pad and zero speed is about 100..140 points. If lander moves away from landing pad it loses reward back. Episode finishes if the lander crashes or comes to rest, receiving additional -100 or +100 points. Each leg ground contact is +10. Firing main engine is -0.3 points each frame. The environment is considered solved when 200 points are reached. Landing outside landing pad is possible. Fuel is infinite, so an agent can learn to fly and then land on its first attempt. However, a usually a timelimit of 1000 is used for each episode in training.
 
