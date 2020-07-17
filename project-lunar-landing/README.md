@@ -3,7 +3,7 @@
 ### Introduction
 
 For this project, I will train an agent to land a space ship on the Moon.
-This environment is par of the OpenAI Gym, more details can be read here: https://gym.openai.com/envs/LunarLander-v2/
+This environment is part of the OpenAI Gym, more details can be read here: https://gym.openai.com/envs/LunarLander-v2/
 
 The work is based on a project by the Udacity Deep Reinforcement Learning Nanodegree: https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893
 
