@@ -93,10 +93,11 @@ The barrier for solving the second version of the environment is slightly differ
  
  1. **`README.md`** - This file
  2. **`Report.md`** - Project report based on Navigation.ipynb and including all executed cells and output
- 3. **`output_47_1.png`** - Picture file for Report.md
- 4. **`Navigation.ipynb`** - Main program. Contains entire implementation of agent and data processing
+ 3. **`output_47_0.png`** - Picture file for Report.md
+ 4. **`Continous_Control.ipynb`** - Main program. Contains entire implementation of agent and data processing
  5. **`unity_environment.log`** - Log File of Unity Environment
  6. **`scores.pckl`** - Training scores of Agent
  7. **`checkpoint_actor.pth`** - Final network parameters for Actor Network
  8. **`checkpoint_critic.pth`** - Final network parameters for Critic Network
  9. **`Crawler.ipynb`** - Template for future project to train an agent in the Unity Crawler Environment
+ 10. **`workspace_utils.py`** - Utility function provided by Udacity to keep Jupyter workspace alive during long GPU training sessions
