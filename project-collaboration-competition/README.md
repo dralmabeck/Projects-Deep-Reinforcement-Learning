@@ -1,14 +1,16 @@
 [//]: # (Image References)
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135623-e770e354-7d12-11e8-998d-29fc74429ca2.gif "Trained Agent"
-[image2]: https://user-images.githubusercontent.com/10624937/42135622-e55fb586-7d12-11e8-8a54-3c31da15a90a.gif "Soccer"
 
-
-# Project 3: Collaboration and Competition
+# Project: Collaboration and Competition
 
 ### Introduction
 
-For this project, you will work with the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment.
+For this project, I will train two agents to play tennis.
+
+This projects is part of my project work on the Deep Reinforcement Learning Nanodegree by Udacity. See https://www.udacity.com/course/ deep-reinforcement-learning-nanodegree--nd893 and https://github.com/udacity/deep-reinforcement-learning
+
+For this project, I work with the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment.
 
 ![Trained Agent][image1]
 
@@ -35,28 +37,53 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux_NoVis.zip) to obtain the "headless" version of the environment.  You will **not** be able to watch the agent without enabling a virtual screen, but you will be able to train the agent.  (_To watch the agent, you should follow the instructions to [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above._)
 
-2. Place the file in the DRLND GitHub repository, in the `p3_collab-compet/` folder, and unzip (or decompress) the file. 
+2. Place the file in the "project-collaboration-competition" subdirectory of this GitHub repository, and unzip (or decompress) the file. 
 
-### Instructions
-
-Follow the instructions in `Tennis.ipynb` to get started with training your own agent!  
-
-### (Optional) Challenge: Crawler Environment
-
-After you have successfully completed the project, you might like to solve the more difficult **Soccer** environment.
-
-![Soccer][image2]
-
-In this environment, the goal is to train a team of agents to play soccer.  
-
-You can read more about this environment in the ML-Agents GitHub [here](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#soccer-twos).  To solve this harder task, you'll need to download a new Unity environment.  (**Note**: Udacity students should not submit a project with this new environment.)
-
-You need only select the environment that matches your operating system:
-- Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer_Linux.zip)
-- Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer.app.zip)
-- Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer_Windows_x86.zip)
-- Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer_Windows_x86_64.zip)
-
-Then, place the file in the `p3_collab-compet/` folder in the DRLND GitHub repository, and unzip (or decompress) the file.  Next, open `Soccer.ipynb` and follow the instructions to learn how to use the Python API to control the agent.
-
-(_For AWS_) If you'd like to train the agents on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Soccer/Soccer_Linux_NoVis.zip) to obtain the "headless" version of the environment.  You will **not** be able to watch the agents without enabling a virtual screen, but you will be able to train the agents.  (_To watch the agents, you should follow the instructions to [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above._)
+### Installation instructions
+ 
+ This project requires Python in version >= 3.5. Furthermore the following Python packages are required.
+ 
+ - Jupyter
+ - Notebook
+ - time
+ - pickle
+ - math
+ - datetime
+ - random
+ - numpy
+ - sys
+ - copy
+ - collections
+ - matplotlib
+ - torch
+ - unityagents
+ 
+ I recommend using the Anaconda Python distribution (https://www.anaconda.com/products/individual) for a thourough installation of a usable Python environment. Then from the console a missing package can easily be installed with **`conda install <package_name>`**.
+ 
+ Furthermore, with the pip package manager missing packages can be installed via the console with **`pip install <package_name>`**.
+ 
+ This repository can be downloaded with Git using **`git checkout https://github.com/dralmabeck/Udacity-Deep-Reinforcement-Learning`**.
+ 
+ ### How to use
+ 
+ 1. From the main directory of this repository in the console go into the "project-collaboration-competition" subdirectory. There execute **`jupyter notebook`**.
+ 
+ 2. Next, open the **`Tennis.ipynb`** notebook.
+ 
+ 3. Follow the instructions and descriptions in `Tennis.ipynb` to get started with training your own agent. It lists all the algorithms and there sources on scientific papers.
+ 
+ 4. Read the **`Report.md`** for insights on my solution on this problem should you get stuck.
+ 
+ ### Files included
+ 
+ 1. **`README.md`** - This file
+ 2. **`Report.md`** - Project report based on Tennis.ipynb and including all executed cells and output
+ 3. **`output_47_0.png`** - Picture file for Report.md
+ 4. **`output_47_1.png`** - Picture file for Report.md 
+ 5. **`Tennis.ipynb`** - Main program. Contains entire implementation of agent and data processing
+ 6. **`unity_environment.log`** - Log File of Unity Environment
+ 7. **`scores.pckl`** - Training scores of Agent
+ 8. **`checkpoint_actor.pth`** - Final network parameters for Actor Network
+ 9. **`checkpoint_critic.pth`** - Final network parameters for Critic Network
+ 10. **`Soccer.ipynb`** - Template for future project to train an agent in the Unity Soccer Environment
+ 11. **`workspace_utils.py`** - Utility function provided by Udacity to keep Jupyter workspace alive during long GPU training sessions

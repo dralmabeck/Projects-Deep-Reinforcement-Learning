@@ -92,7 +92,7 @@ The barrier for solving the second version of the environment is slightly differ
  ### Files included
  
  1. **`README.md`** - This file
- 2. **`Report.md`** - Project report based on Navigation.ipynb and including all executed cells and output
+ 2. **`Report.md`** - Project report based on Continous_Control.ipynb and including all executed cells and output
  3. **`output_47_0.png`** - Picture file for Report.md
  4. **`Continous_Control.ipynb`** - Main program. Contains entire implementation of agent and data processing
  5. **`unity_environment.log`** - Log File of Unity Environment
