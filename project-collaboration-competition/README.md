@@ -78,11 +78,11 @@ The environment is considered solved, when the average (over 100 episodes) of th
  
  1. **`README.md`** - This file
  2. **`Report.md`** - Project report based on Tennis.ipynb and including all executed cells and output
- 3. **`output_47_0.png`** - Picture file for Report.md
- 4. **`output_47_1.png`** - Picture file for Report.md 
- 5. **`Tennis.ipynb`** - Main program. Contains entire implementation of agent and data processing
- 6. **`unity_environment.log`** - Log File of Unity Environment
- 7. **`scores.pckl`** - Training scores of Agent
+ 3. **`output_42_0.png`** - Picture file for Report.md
+ 4. **`Tennis.ipynb`** - Main program. Contains entire implementation of agent and data processing
+ 5. **`unity_environment.log`** - Log File of Unity Environment
+ 6. **`scores.pckl`** - Training scores of Agent
+ 7. **`scores_avg.pckl`** - Training scores of Agent, average values
  8. **`checkpoint_actor.pth`** - Final network parameters for Actor Network
  9. **`checkpoint_critic.pth`** - Final network parameters for Critic Network
  10. **`Soccer.ipynb`** - Template for future project to train an agent in the Unity Soccer Environment

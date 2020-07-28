@@ -155,7 +155,7 @@ Now it's your turn to train your own agent to solve the environment!  When train
 env_info = env.reset(train_mode=True)[brain_name]
 ```
 
-# Navigation - Student's project work
+# Continous Control - Student's project work
 
 The following sections show my code and results from my work on this project.
 
