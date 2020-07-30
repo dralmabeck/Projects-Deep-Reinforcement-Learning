@@ -9,7 +9,7 @@ You are welcome to use this coding environment to train your agent for the proje
 
 Please see the README.md file for information on how to install all the necessary packages for this project.
 
-### Setup 1: Use the following cell for running on local computer
+# Setup 1: Use the following cell for running on local computer
 
 For instructions on how to install unityagents please see the README.md file.
 
@@ -21,13 +21,13 @@ For instructions on how to install unityagents please see the README.md file.
 #env = UnityEnvironment(file_name="Tennis.app")
 ```
 
-### Setup 2: Use the following two cells for running on Udacity Workspace
+# Setup 2: Use the following two cells for running on Udacity Workspace
 
 The Udacity workspace is pre-configured so that the notebook will execute just fine.
 
 
 ```python
-!pip -q install ./python
+#!pip -q install ./python
 ```
 
     [31mtensorflow 1.7.1 has requirement numpy>=1.13.3, but you'll have numpy 1.12.1 which is incompatible.[0m
@@ -36,10 +36,10 @@ The Udacity workspace is pre-configured so that the notebook will execute just f
 
 
 ```python
-from unityagents import UnityEnvironment
-import numpy as np
+#from unityagents import UnityEnvironment
+#import numpy as np
 
-env = UnityEnvironment(file_name="/data/Tennis_Linux_NoVis/Tennis")
+#env = UnityEnvironment(file_name="/data/Tennis_Linux_NoVis/Tennis")
 ```
 
     INFO:unityagents:
@@ -60,7 +60,7 @@ env = UnityEnvironment(file_name="/data/Tennis_Linux_NoVis/Tennis")
             Vector Action descriptions: , 
 
 
-### From here continue with all cells in the notebook
+# After Setup continue from here with all cells in the notebook
 
 Environments contain **_brains_** which are responsible for deciding the actions of their associated agents. Here we check for the first brain available, and set it as the default brain we will be controlling from Python.
 
