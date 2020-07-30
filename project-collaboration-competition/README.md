@@ -6,11 +6,10 @@
 
 ### Introduction
 
-For this project, I will train two agents to play tennis.
+For this project, I will train two agents to play tennis within [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment.
 
-This projects is part of my project work on the Deep Reinforcement Learning Nanodegree by Udacity. See https://www.udacity.com/course/ deep-reinforcement-learning-nanodegree--nd893 and https://github.com/udacity/deep-reinforcement-learning
-
-For this project, I work with the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment.
+This projects is part of my project work on the Deep Reinforcement Learning Nanodegree by Udacity.
+See https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893 and https://github.com/udacity/deep-reinforcement-learning
 
 ![Trained Agent][image1]
 
@@ -41,22 +40,19 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 ### Installation instructions
  
- This project requires Python in version >= 3.5. Furthermore the following Python packages are required.
+ This project was developed with Python version 3.6. It requires the following packages with the corresponding versions.
  
- - Jupyter
- - Notebook
- - time
- - pickle
- - math
- - datetime
- - random
- - numpy
- - sys
- - copy
- - collections
- - matplotlib
- - torch
- - unityagents
+ - jupyter==1.0.0
+ - notebook==6.0.3
+ - pypickle==0.1.0
+ - numpy==1.19.1
+ - matplotlib==3.3.0
+ - torch==1.6.0
+ - unityagents==0.4.0
+ 
+ Please note, that currently, **`unityagents`** has very specific requirements (such as Tensorflow in version 1.7.1, which will need Python 3.6), so the version numbers are essential for setting up a Python environment to compile and execute this notebook.
+ 
+ All packages used by me in a freshly set up development environment can be found in the **`requirements.txt`**.
  
  I recommend using the Anaconda Python distribution (https://www.anaconda.com/products/individual) for a thourough installation of a usable Python environment. Then from the console a missing package can easily be installed with **`conda install <package_name>`**.
  
@@ -78,12 +74,19 @@ The environment is considered solved, when the average (over 100 episodes) of th
  
  1. **`README.md`** - This file
  2. **`Report.md`** - Project report based on Tennis.ipynb and including all executed cells and output
- 3. **`output_42_0.png`** - Picture file for Report.md
+ 3. **`output_33_0.png`** - Picture file for Report.md
  4. **`Tennis.ipynb`** - Main program. Contains entire implementation of agent and data processing
- 5. **`unity_environment.log`** - Log File of Unity Environment
- 6. **`scores.pckl`** - Training scores of Agent
- 7. **`scores_avg.pckl`** - Training scores of Agent, average values
- 8. **`checkpoint_actor.pth`** - Final network parameters for Actor Network
- 9. **`checkpoint_critic.pth`** - Final network parameters for Critic Network
- 10. **`Soccer.ipynb`** - Template for future project to train an agent in the Unity Soccer Environment
- 11. **`workspace_utils.py`** - Utility function provided by Udacity to keep Jupyter workspace alive during long GPU training sessions
+ 5. **`Soccer.ipynb`** - Template for future possible project work to train an agent in the Unity Soccer Environment
+ 6. **`unity_environment.log`** - Log File of Unity Environment
+ 7. **`requirements.txt`** - Description of fully functional development and execution environment
+ 8. **`output/scores.pckl`** - Training scores of Agent, maximum of both agents
+ 9. **`output/scores_avg.pckl`** - Training scores of Agent, average values
+ 10. **`output/checkpoint_actor.pth`** - Final network parameters for Actor Network
+ 11. **`output/checkpoint_critic.pth`** - Final network parameters for Critic Network
+ 12. **`source/workspace_utils.py`** - Utility function provided by Udacity to keep Jupyter workspace alive during long GPU training sessions
+ 13. **`source/ddpg.py`** - File containing Deep Deterministic Policy Gradient Algorithm
+ 14. **`source/agent.py`** - File containing the Actor-Critic-Agent implementation
+ 15. **`source/network.py`** - File containing the neural network architectures used by agent
+ 16. **`source/replay_buffer.py`** - File containing replay buffer implementation used by agent
+ 17. **`source/noise_generator.py`** - File containing a stochastic noise process used by agent
+ 18. **`source/__init.py__`** - Initialization file required by Python to import modules from source directory
