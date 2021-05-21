@@ -234,7 +234,7 @@ sphinxcontrib-serializinghtml==1.1.4
 spyder==4.1.4
 spyder-kernels==1.9.3
 tensorboard==1.7.0
-tensorflow==1.7.1
+tensorflow==2.5.0
 termcolor==1.1.0
 terminado==0.8.3
 testpath==0.4.4
